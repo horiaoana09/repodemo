@@ -20,7 +20,7 @@ jobs:
         run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Tag Docker Image
-        run: docker tag app_demo:latest horiaoana89/app_demo:latest
+        run: docker tag app_demo:latest horiaoana89/repository2
 
       - name: Push Docker Image
-        run: docker push horiaoana09/app_demo:latest
+        run: docker push horiaoana89/repository2
